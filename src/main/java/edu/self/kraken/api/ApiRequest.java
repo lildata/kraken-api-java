@@ -152,33 +152,5 @@ class ApiRequest {
         return postData.toString();
     }
 
-    /**
-     * Sets the value of the API-Key request property.
-     *
-     * @param key the key
-     * @throws IllegalArgumentException if the key is null
-     */
-    public void setKey(String key) {
 
-        if (key == null) {
-            throw new IllegalArgumentException(ERROR_NULL_KEY);
-        }
-
-        this.key = key;
-    }
-
-    /**
-     * Sets the value of the API-Sign request property.
-     *
-     * @param signature the signature
-     * @throws IllegalArgumentException if the signature is null
-     */
-    public void setSignature(String signature) {
-
-        if (signature == null) {
-            throw new IllegalArgumentException(ERROR_NULL_SIGNATURE);
-        }
-
-        this.signature = signature;
-    }
 }
