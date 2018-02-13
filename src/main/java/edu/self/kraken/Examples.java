@@ -15,7 +15,6 @@ public class Examples {
 
         KrakenApi api = new KrakenApi();
         api.setKey("Your API Key"); // FIXME
-        api.setSecret("Your API Secret"); // FIXME
 
         String response;
         Map<String, String> input = new HashMap<>();
@@ -27,11 +26,6 @@ public class Examples {
         input.clear();
         input.put("pair", "XBTEUR,XBTLTC");
         response = api.queryPublic(Method.ASSET_PAIRS, input);
-        System.out.println(response);
-
-        input.clear();
-        input.put("asset", "ZEUR");
-        response = api.queryPrivate(Method.BALANCE, input);
         System.out.println(response);
     }
 }
